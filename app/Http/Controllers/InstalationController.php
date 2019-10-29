@@ -13,12 +13,12 @@ class InstalationController extends Controller
 {
     //
 
- public function index()
+ /*public function index()
     {
          $instalations = Instalation::all();
 
         return view('backend.homeadmin', ['instalations' => $instalations]);
-     }
+     }*/
 
 
     public function store(Request $request){

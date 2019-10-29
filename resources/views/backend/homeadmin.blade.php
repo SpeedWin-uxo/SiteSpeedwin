@@ -94,7 +94,7 @@
 
   @foreach($slides as $slide)
 
-      <tr>
+                          <tr>
                               <td>{{ $slide->id }}</td>
                               <td>  <a class="thumbnail" href="{{asset('storage/' . $slide->image)}}"
 
@@ -108,7 +108,7 @@
                                   <button class="btn btn-small"><span class="icon-trash"></span></button>
                                 </div>
                               </td>
-                                </tr>
+                          </tr>
 
       @endforeach
 
@@ -133,7 +133,7 @@
 
 
   </div>
- Grid row
+
   <div class="row-fluid">
 
 
@@ -288,7 +288,7 @@
 
 
 
-    <div class="row-fluid">
+<div class="row-fluid">
 
 
     <article class="span12 data-block">
@@ -343,18 +343,59 @@
 
 
         </section>
-        <ul class="thumbnails" >
-          @foreach($instalations as $instalation)
+
+        <div class="row-fluid">
+
+                  <!-- Data block -->
+                  <article class="span12 data-block">
+                    <section>
+
+                      <h3>Postes publiés</h3>
+                      <table class="table table-striped table-bordered table-hover table-media">
+                        <thead>
+                          <tr>
+
+                            <th class="span1">ID</th>
+
+                            <th>Images</th>
+                            <th>Actions</th>
+
+                          </tr>
+                        </thead>
+                        <tbody>
+
+@foreach($instalations as $instalation)
+
+                        <tr>
+                            <td>{{ $instalation->id }}</td>
+                            <td>  <a class="thumbnail" href="{{asset('storage/' . $instalation->image)}}"
+
+                              rel="lightbox"><img alt="" src="{{asset('storage/' . $instalation->image)}}"  ></a></td>
 
 
-          <li class="span2"><a class="thumbnail" href="{{asset('storage/' . $instalation->image)}}"
+                            <td>
+                              <div class="btn-group">
+                                <button class="btn btn-small"><span class="icon-eye-open"></span></button>
 
-          rel="lightbox"><img alt="" src="{{asset('storage/' . $instalation->image)}}"  ></a></li>
+                                <button class="btn btn-small"><span class="icon-trash"></span></button>
+                              </div>
+                            </td>
+                        </tr>
 
-            @endforeach
+    @endforeach
 
 
-        </ul>
+
+
+                        </tbody>
+                      </table>
+
+                    </section>
+                  </article>
+                  <!-- /Data block -->
+
+                </div>
+
 
       </div>
     </article>
@@ -365,6 +406,119 @@
 
 
   </div>
+
+  <div class="row-fluid">
+
+
+      <article class="span12 data-block">
+        <div class="data-container">
+          <header>
+            <h2>Les références</h2>
+          </header>
+          <section>
+
+
+            <form    action="{{url('inst')}}" method="POST" enctype="multipart/form-data">
+                  {{csrf_field()}}
+              <fieldset>
+
+
+
+                <div class="control-group">
+                  <label class="control-label" for="fileInput">Selectioner une image de taille 350 * 40</label>
+                  <p> Vous pouvez changer les photos qui apparessent dans la rebrique derniéres instalations  </p>
+
+                  <div class="row-fluid">
+
+                    <div class="span6">
+                      <div class="fileupload fileupload-new" data-provides="fileupload">
+                        <h4></h4>
+                        <div class="fileupload-new fileupload-large thumbnail"><img src="assets/img/sample_content/upload-250x150.png" alt="Upload preview"></div>
+                        <div class="fileupload-preview fileupload-exists fileupload-large flexible thumbnail"></div>
+                        <div>
+                          <span class="btn btn-alt btn-file">
+                            <span class="fileupload-new">Select image</span>
+                            <span class="fileupload-exists">Change</span>
+                            <input type="file" id="image" name="image">
+                          </span>
+                            <input type="submit" class="btn btn-alt btn-file"  value="enregistrer" >
+                          <a class="btn btn-alt btn-danger fileupload-exists" data-dismiss="fileupload" href="#">Remove</a>
+                        </div>
+                      </div>
+
+
+                    </div>
+                  </div>
+                </div>
+
+              </fieldset>
+            </form>
+
+
+          </section>
+
+          <div class="row-fluid">
+
+                    <!-- Data block -->
+                    <article class="span12 data-block">
+                      <section>
+
+                        <h3>Postes publiés</h3>
+                        <table class="table table-striped table-bordered table-hover table-media">
+                          <thead>
+                            <tr>
+
+                              <th class="span1">ID</th>
+
+                              <th>Images</th>
+                              <th>Actions</th>
+
+                            </tr>
+                          </thead>
+                          <tbody>
+
+  @foreach($instalations as $instalation)
+
+                          <tr>
+                              <td>{{ $instalation->id }}</td>
+                              <td>  <a class="thumbnail" href="{{asset('storage/' . $instalation->image)}}"
+
+                                rel="lightbox"><img alt="" src="{{asset('storage/' . $instalation->image)}}"  ></a></td>
+
+
+                              <td>
+                                <div class="btn-group">
+                                  <button class="btn btn-small"><span class="icon-eye-open"></span></button>
+
+                                  <button class="btn btn-small"><span class="icon-trash"></span></button>
+                                </div>
+                              </td>
+                          </tr>
+
+      @endforeach
+
+
+
+
+                          </tbody>
+                        </table>
+
+                      </section>
+                    </article>
+                    <!-- /Data block -->
+
+                  </div>
+
+
+        </div>
+      </article>
+
+
+
+
+
+
+    </div>
 
 
 </section>

@@ -11,14 +11,19 @@
 |
 */
 Route::get('homeadmin','SlideController@index');
-Route::post('homeadmin','SlideController@store');
+
 
 Route::get('recrutadmin','RecrutementController@index');
-Route::post('homeadmin','InstalationController@index');
-//Route::resource('inst', 'InstalationController');
+Route::get('contact','ContactController@index');
+
+Route::post('homeadmin','SlideController@store');
+
+
+
+Route::post('contact','ContactController@store');
 
 Route::post('recrutadmin','RecrutementController@store');
-/*
+
 
 Route::post('cap','CapacityController@store');
 Route::post('inst','InstalationController@store');

@@ -134,14 +134,14 @@ background-color:#e6e6e6;
 				<nav class="main-navigation nav-collapse" role="navigation" id="st1">
 					<ul>
 
-						<li class="current"><a href="forms.html" class="no-submenu"><span class="fam-application-form"></span>Acceuil</a></li>
-						<li class="current"><a href="forms.html" class="no-submenu"><span class="fam-application-form"></span>Recrutement </a></li>
-						<li class="current"><a href="forms.html" class="no-submenu"><span class="fam-application-form"></span>Contact</a></li>
+						<li class="current"><a href="{{url('homeadmin')}}" class="no-submenu"><span class="fam-application-form"></span>Acceuil</a></li>
+						<li class="current"><a href="{{url('recrutadmin')}}" class="no-submenu"><span class="fam-application-form"></span>Recrutement </a></li>
+						<li class="current"><a href="{{url('contact')}}" class="no-submenu"><span class="fam-application-form"></span>Contact</a></li>
 
 
 
 
-						<li><a href="login.html" class="no-submenu"><span class="fam-door-in"></span>Login page</a></li>
+						<li><a href="{{url('login')}}" class="no-submenu"><span class="fam-door-in"></span>page Login </a></li>
 
 
 					</ul>

@@ -7,16 +7,21 @@ use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\DB;
 
 use App\Slide;
-
+use App\Instalation;
+use App\Reference;
 
 class SlideController extends Controller
 {
     //
    public function index()
    {
-        $slides = DB::table('slides')->get();
+      $slides = Slide::all();
+      $instalations = Instalation::all();
+      $refrences = Reference::all();
+      return view('backend.homeadmin', ['slides' => $slides,'instalations' => $instalations,'refrences' => $refrences]);
 
-       return view('backend.homeadmin', ['slides' => $slides]);
+
+
     }
 
 

@@ -29,11 +29,17 @@ Route::post('contact','ContactController@store');
 Route::post('recrutadmin','RecrutementController@store');
 Route::post('cap','CapacityController@store');
 Route::post('inst','InstalationController@store');
+
 Route::post('ref','ReferenceController@store');
 
 Route::get('cont','MmailController@index');
 Route::post('cont','MmailController@store');
+Route::get('devis','MmailController@affiche');
+Route::post('devis','MmailController@send');
+Route::get('newsletter','NewsletterController@index');
 
+Route::post('newslt','NewsletterController@store');
+Route::post('/deletenews/{id}','NewsletterController@delete');
 
 
 

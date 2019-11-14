@@ -40,7 +40,7 @@
 					<li><a href=votreprojet> Inspération</a></li>
 					<li   class="active"><a  href=budget> Budget</a></li>
 					<li><a href=mesure>  Prise de mesures</a></li>
-					<li><a  href=pose> Production & Pose</a></li>
+					<li><a  href=pose> Production</a></li>
 
 					<li><a href=sav> SAV</a></li>
 				</ul>

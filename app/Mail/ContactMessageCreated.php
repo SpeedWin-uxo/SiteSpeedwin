@@ -11,6 +11,8 @@ class ContactMessageCreated extends Mailable
 {
     use Queueable, SerializesModels;
       public $data;
+
+
     /**
      * Create a new message instance.
      *
@@ -19,6 +21,7 @@ class ContactMessageCreated extends Mailable
     public function __construct($data)
     {
       $this->data = $data;
+
     }
 
     /**
@@ -28,6 +31,11 @@ class ContactMessageCreated extends Mailable
      */
     public function build()
     {
-        return $this->markdown('emails.messages.created')->subject('nouveau mesg')->with('data', $this->data);
+        return $this->from('uxo.digital@gmail.com')->markdown('emails.messages.created')->subject('nouveau mesg')->with('data', $this->data);
+
+
+
     }
+
+
 }

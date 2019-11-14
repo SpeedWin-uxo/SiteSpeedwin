@@ -360,16 +360,17 @@ Que votre projet soit résidentiel ou commercial, Speedwin saura bien vous conse
 					<!--Appointment Form-->
 					<div class="appointment-form">
 
-						<form method="post" action="contact.html">
+            <form method="post" action="{{url('devis')}}" enctype="multipart/form-data">
+                {{csrf_field()}}
 							<div class="row clearfix">
 								<div class="form-group col-lg-4 col-md-4 col-sm-12">
-									<input type="text" name="nom" value="" placeholder="Votre Nom" required>
+									<input type="text" name="nom" id="name" value="" placeholder="Votre Nom" required>
 								</div>
 								<div class="form-group col-lg-4 col-md-4 col-sm-12">
-									<input type="text" name="phone" value="" placeholder="TéléPhone" required>
+									<input type="text" name="phone"  id="phone" value="" placeholder="TéléPhone" required>
 								</div>
 								<div class="form-group col-lg-4 col-md-4 col-sm-12">
-									<select class="custom-select-box">
+									<select name="service" id="service" class="custom-select-box">
 										<option>Portes & Fenêtres</option>
 										<option>Volets Roulants</option>
 										<option>Stores d'Intérieur</option>
@@ -640,402 +641,404 @@ Que votre projet soit résidentiel ou commercial, Speedwin saura bien vous conse
 	</section>
 
 
+  <section class="services-section">
+     	<div class="outer-container">
+     		<div class="auto-container">
+     			<!--Sec Title-->
+ 				<div class="sec-title centered">
+ 					<div class="title-inner">
+ 						<h2>Nos Principaux <span class="theme_color">Services</span></h2>
+ 					</div>
+ 				</div>
+ 			</div>
+ 	    <div class="lower-section">
+             <div class="lower-inner-section">
+ 			  <div class="single-item-carousel owl-theme owl-carousel">
 
 
-    <section class="services-section">
-    	<div class="outer-container">
-    		<div class="auto-container">
-    			<!--Sec Title-->
-				<div class="sec-title centered">
-					<div class="title-inner">
-						<h2>Nos Principaux <span class="theme_color">Services</span></h2>
-					</div>
-				</div>
-			</div>
-			<div class="single-item-carousel owl-carousel owl-theme">
-
-				<!--Services Block-->
+ 				<!--Services Block-->
 
 
-				<div class="services-block">
-					<div class="inner-box">
-						<div class="image-outer">
-							<div class="image" width="370" height="250">
-								<img src="images/d.png" alt="" width="370" height="250"/>
-								<a href="images/d.png" class="overlay-box lightbox-image" data-fancybox="services-gallery" data-caption=""><span class="plus flaticon-plus-symbol"></span></a>
-							</div>
-						</div>
-						<div class="lower-content">
-							<div class="big-icon flaticon-car-parts"></div>
-							<div class="icon-box">
-								<span class="icon flaticon-car-parts"></span>
-							</div>
-							<h3><a href="#"> Revêtement Intérieur</a></h3>
-							<div class="text">Nous sommes une spécialisée dans la fourniture et pose de diﬀérents types de faux plafonds amovibles, Revêtement mur et sol,Faux plancher technique...</div>
-						</div>
-					</div>
-				</div>
+ 				<div class="services-block">
+ 					<div class="inner-box">
+ 						<div class="image-outer">
+ 							<div class="image" width="370" height="250">
+ 								<img src="images/d.png" alt="" width="370" height="250"/>
+ 								<a href="images/d.png" class="overlay-box lightbox-image" data-fancybox="services-gallery" data-caption=""><span class="plus flaticon-plus-symbol"></span></a>
+ 							</div>
+ 						</div>
+ 						<div class="lower-content">
+ 							<div class="big-icon flaticon-car-parts"></div>
+ 							<div class="icon-box">
+ 								<span class="icon flaticon-car-parts"></span>
+ 							</div>
+ 							<h3><a href="#"> Revêtement Intérieur</a></h3>
+ 							<div class="text">Nous sommes une spécialisée dans la fourniture et pose de diﬀérents types de faux plafonds amovibles, Revêtement mur et sol,Faux plancher technique...</div>
+ 						</div>
+ 					</div>
+ 				</div>
 
-				<!--Services Block-->
-				<div class="services-block">
-					<div class="inner-box">
-						<div class="image-outer">
-							<div class="image" width="370" height="250">
-								<img src="images/b.png" alt="" width="370" height="250"/>
-								<a href="images/b.png" class="overlay-box lightbox-image" data-fancybox="services-gallery" data-caption=""><span class="plus flaticon-plus-symbol"></span></a>
-							</div>
-						</div>
-						<div class="lower-content">
-							<div class="big-icon flaticon-car-parts"></div>
-							<div class="icon-box">
-								<span class="icon flaticon-car-parts"></span>
-							</div>
-							<h3><a href="#">Revêtement Extérieur</a></h3>
-							<div class="text">SPEEDWIN vous ouvre des horizons créatifs illimités dans le revêtement des façades, combinant élégance des formes,
-							richesse des couleurs, pertinence des modèles et ﬁnitions
-							impeccables selon votre choix, tout en respectent les règles de l’art.</div>
-						</div>
-					</div>
-				</div>
+ 				<!--Services Block-->
+ 				<div class="services-block">
+ 					<div class="inner-box">
+ 						<div class="image-outer">
+ 							<div class="image" width="370" height="250">
+ 								<img src="images/b.png" alt="" width="370" height="250"/>
+ 								<a href="images/b.png" class="overlay-box lightbox-image" data-fancybox="services-gallery" data-caption=""><span class="plus flaticon-plus-symbol"></span></a>
+ 							</div>
+ 						</div>
+ 						<div class="lower-content">
+ 							<div class="big-icon flaticon-car-parts"></div>
+ 							<div class="icon-box">
+ 								<span class="icon flaticon-car-parts"></span>
+ 							</div>
+ 							<h3><a href="#">Revêtement Extérieur</a></h3>
+ 							<div class="text">SPEEDWIN vous ouvre des horizons créatifs illimités dans le revêtement des façades, combinant élégance des formes,
+ 							richesse des couleurs, pertinence des modèles et ﬁnitions
+ 							impeccables selon votre choix, tout en respectent les règles de l’art.</div>
+ 						</div>
+ 					</div>
+ 				</div>
 
-				<!--Services Block-->
-				<div class="services-block">
-					<div class="inner-box">
-						<div class="image-outer">
-							<div class="image">
-								<img src="images/a.png" alt="" width="370" height="250" />
-								<a href="images/a.png" class="overlay-box4 lightbox-image" data-fancybox="services-gallery" data-caption=""><span class="plus flaticon-plus-symbol"></span></a>
-							</div>
-						</div>
-						<div class="lower-content">
-							<div class="big-icon flaticon-car-parts"></div>
-							<div class="icon-box">
-								<span class="icon flaticon-car-parts"></span>
-							</div>
-							<h3><a href="">Stores Intérieur</a></h3>
-							<div class="text"> Venez découvrir notre large gamme de stores bien conçus et abordables dans votre magasin SPEEDWIN: Stores Zebra, occultants, vénitiens, vérticaux...
-			               </div>
-						</div>
-					</div>
-				</div>
+ 				<!--Services Block-->
+ 				<div class="services-block">
+ 					<div class="inner-box">
+ 						<div class="image-outer">
+ 							<div class="image">
+ 								<img src="images/a.png" alt="" width="370" height="250" />
+ 								<a href="images/a.png" class="overlay-box4 lightbox-image" data-fancybox="services-gallery" data-caption=""><span class="plus flaticon-plus-symbol"></span></a>
+ 							</div>
+ 						</div>
+ 						<div class="lower-content">
+ 							<div class="big-icon flaticon-car-parts"></div>
+ 							<div class="icon-box">
+ 								<span class="icon flaticon-car-parts"></span>
+ 							</div>
+ 							<h3><a href="">Stores Intérieur</a></h3>
+ 							<div class="text"> Venez découvrir notre large gamme de stores bien conçus et abordables dans votre magasin SPEEDWIN: Stores Zebra, occultants, vénitiens, vérticaux...
+ 			               </div>
+ 						</div>
+ 					</div>
+ 				</div>
 
-				<div class="services-block">
-					<div class="inner-box">
-						<div class="image-outer">
-							<div class="image" width="370" height="250">
-								<img src="images/r.png" alt="" />
-								<a href="images/r.png" class="overlay-box3 lightbox-image" data-fancybox="services-gallery" data-caption=""><span class="plus flaticon-plus-symbol"></span></a>
-							</div>
-						</div>
-						<div class="lower-content">
-							<div class="big-icon flaticon-car-parts"></div>
-							<div class="icon-box">
-								<span class="icon flaticon-car-parts"></span>
-							</div>
-							<h3><a href="#">Portes & Fenêtres</a></h3>
-							<div class="text">SPEEDWIN est spécialisées dans l’aménagement et la rénovation des espaces de travail en cloisons amovibles et aménagement associé du secondœuvre, nous nous fournissons auprès des grands fabricants du secteur...
-			               </div>
-						</div>
-					</div>
-				</div>
+ 				<div class="services-block">
+ 					<div class="inner-box">
+ 						<div class="image-outer">
+ 							<div class="image" width="370" height="250">
+ 								<img src="images/r.png" alt="" />
+ 								<a href="images/r.png" class="overlay-box3 lightbox-image" data-fancybox="services-gallery" data-caption=""><span class="plus flaticon-plus-symbol"></span></a>
+ 							</div>
+ 						</div>
+ 						<div class="lower-content">
+ 							<div class="big-icon flaticon-car-parts"></div>
+ 							<div class="icon-box">
+ 								<span class="icon flaticon-car-parts"></span>
+ 							</div>
+ 							<h3><a href="#">Portes & Fenêtres</a></h3>
+ 							<div class="text">SPEEDWIN est spécialisées dans l’aménagement et la rénovation des espaces de travail en cloisons amovibles et aménagement associé du secondœuvre, nous nous fournissons auprès des grands fabricants du secteur...
+ 			               </div>
+ 						</div>
+ 					</div>
+ 				</div>
 
 
-				<div class="services-block">
-					<div class="inner-box">
-						<div class="image-outer">
-							<div class="image" width="370" height="250">
-								<img src="images/c.jpg" alt="" width="370" height="250" />
-								<a href="images/c.jpg" class="overlay-box5 lightbox-image" data-fancybox="services-gallery" data-caption=""><span class="plus flaticon-plus-symbol"></span></a>
-							</div>
-						</div>
-						<div class="lower-content">
-							<div class="big-icon flaticon-car-parts"></div>
-							<div class="icon-box">
-								<span class="icon flaticon-car-parts"></span>
-							</div>
-							<h3><a href="#">Cloisons Amovible</a></h3>
-							<div class="text">SPEEDWIN est spécialisées dans l’aménagement et la rénovation des espaces de travail en cloisons amovibles et aménagement associé du secondœuvre, nous nous fournissons auprès des grands fabricants du secteur...
-			               </div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+ 				<div class="services-block">
+ 					<div class="inner-box">
+ 						<div class="image-outer">
+ 							<div class="image" width="370" height="250">
+ 								<img src="images/c.jpg" alt="" width="370" height="250" />
+ 								<a href="images/c.jpg" class="overlay-box5 lightbox-image" data-fancybox="services-gallery" data-caption=""><span class="plus flaticon-plus-symbol"></span></a>
+ 							</div>
+ 						</div>
+ 						<div class="lower-content">
+ 							<div class="big-icon flaticon-car-parts"></div>
+ 							<div class="icon-box">
+ 								<span class="icon flaticon-car-parts"></span>
+ 							</div>
+ 							<h3><a href="#">Cloisons Amovible</a></h3>
+ 							<div class="text">SPEEDWIN est spécialisées dans l’aménagement et la rénovation des espaces de travail en cloisons amovibles et aménagement associé du secondœuvre, nous nous fournissons auprès des grands fabricants du secteur...
+ 			               </div>
+ 						</div>
+ 					</div>
+ 				</div>
+ 			</div>
+ 	    </div>
+ 		</div>
+ 		</div>
+ 	</section>
+
 
 
   	<!--Window Tab Section-->
-  	<section class="window-tab-section">
-  		<div class="auto-container">
+    <section class="window-tab-section">
+    		<div class="auto-container">
 
-  			<!--Sec Title-->
-  			<div class="sec-title centered">
-				<h2>C'est quoi votre <span class="theme_color">Style?</span></h2>
-			</div>
+    			<!--Sec Title-->
+    			<div class="sec-title centered">
+  				<h2>C'est quoi votre <span class="theme_color">Style?</span></h2>
+  			</div>
 
-			<!--Window Info Tabs-->
-			<div class="window-info-tabs">
-				<!--Window Tabs-->
-				<div class="window-tabs tabs-box">
+  			<!--Window Info Tabs-->
+  			<div class="window-info-tabs">
+  				<!--Window Tabs-->
+  				<div class="window-tabs tabs-box">
 
-					<!--Tab Btns-->
-					<div class="btns-outer text-center">
-						<ul class="tab-btns tab-buttons clearfix">
-							<li data-tab="#window-styles" class="tab-btn active-btn"><span class="icon flaticon-window"></span>Styles Fenêtres</li>
+  					<!--Tab Btns-->
+  					<div class="btns-outer text-center">
+  						<ul class="tab-btns tab-buttons clearfix">
+  							<li data-tab="#window-styles" class="tab-btn active-btn"><span class="icon flaticon-window"></span>Styles Fenêtres</li>
 
-						</ul>
-					</div>
+  						</ul>
+  					</div>
 
-					<!--Tabs Container-->
-					<div class="tabs-content">
+  					<!--Tabs Container-->
+  					<div class="tabs-content">
 
-						<!--Tab / Active Tab-->
-						<div class="tab active-tab" id="window-styles">
-							<div class="content">
-								<div class="row clearfix">
+  						<!--Tab / Active Tab-->
+  						<div class="tab active-tab" id="window-styles">
+  							<div class="content">
+  								<div class="row clearfix">
 
-									<!--Left Column-->
-									<div class="left-column col-lg-3 col-md-6 col-sm-12">
-										<div class="inner-column">
+  									<!--Left Column-->
+  									<div class="left-column col-lg-3 col-md-6 col-sm-12">
+  										<div class="inner-column">
 
-											<!--Featured Block-->
-											<div class="featured-block">
-												<div class="inner-box">
-													<h3><a href="#">Ouvertures</a></h3>
-													<div class="text">L’ouverture des fenêtres se décline en différents ouvrants que vous pourrez choisir en fonction de vos besoins, de l’esthétique que vous désirez apporter à votre logement.</div>
-													<div class="icon-box">
-														<span class="icon flaticon-window-2"></span>
-													</div>
-												</div>
-											</div>
+  											<!--Featured Block-->
+  											<div class="featured-block">
+  												<div class="inner-box">
+  													<h3><a href="#">Ouvertures</a></h3>
+  													<div class="text">L’ouverture des fenêtres se décline en différents ouvrants que vous pourrez choisir en fonction de vos besoins, de l’esthétique que vous désirez apporter à votre logement.</div>
+  													<div class="icon-box">
+  													<img src="images/ouv.png" alt="" />
+  													</div>
+  												</div>
+  											</div>
 
-											<!--Featured Block-->
-											<div class="featured-block">
-												<div class="inner-box">
-													<h3><a href="#">Vitrage</a></h3>
-													<div class="text"> Simple ou double, feuilleté ou trempé pour les grandes baies, teinté ou opaque pour des soucis de vis-à-vis avec ou sans petits bois, nous répondons à des besoins différents pour améliorer l’isolation thermique, phonique et la sécurité de votre bien.</div>
-													<div class="icon-box">
-														<span class="icon flaticon-window-4"></span>
-													</div>
-												</div>
-											</div>
+  											<!--Featured Block-->
+  											<div class="featured-block">
+  												<div class="inner-box">
+  													<h3><a href="#">Vitrage</a></h3>
+  													<div class="text"> Simple ou double, feuilleté ou trempé pour les grandes baies, teinté ou opaque pour des soucis de vis-à-vis avec ou sans petits bois, nous répondons à des besoins différents pour améliorer l’isolation thermique, phonique et la sécurité de votre bien.</div>
+  													<div class="icon-box">
+  															<img src="images/V1.png" alt="" />
+  													</div>
+  												</div>
+  											</div>
 
-										</div>
-									</div>
+  										</div>
+  									</div>
 
-									<!--Image Column-->
-									<div class="image-column col-lg-6 col-md-12 col-sm-12">
-										<div class="inner-column">
-											<div class="image">
-												<img src="images/resource/window-1.png" alt="" />
+  									<div class="image-column col-lg-6 col-md-12 col-sm-12">
+  										<div class="inner-column">
+  											<div class="image">
+  												<img src="images/resource/window-1.png" alt="" />
 
-												<!--Frame One-->
-												<div class="plus-box frame-one">
-													<span class="icon flaticon-plus-symbol"></span>
-												<div class="tooltip-data">
-														<h4>Joints</h4>
-														<div class="tooltip-text">text</div>
-													</div>
-												</div>
 
-												<!--Frame Two-->
-												<div class="plus-box frame-two">
-													<span class="icon flaticon-plus-symbol"></span>
-												<div class="tooltip-data">
-														<h4>Joints</h4>
-														<div class="tooltip-text">text</div>
-													</div>
-												</div>
+  												<!--div class="plus-box frame-one">
+  													<span class="icon flaticon-plus-symbol"></span>
+  												<div class="tooltip-data">
+  														<h4>Joints</h4>
+  														<div class="tooltip-text">text</div>
+  													</div>
+  												</div>
 
-												<!--Frame Three-->
-												<div class="plus-box frame-three">
-													<span class="icon flaticon-plus-symbol"></span>
-												<div class="tooltip-data">
-														<h4>Vitrage</h4>
-														<div class="tooltip-text">text</div>
-													</div>
-												</div>
 
+  												<div class="plus-box frame-two">
+  													<span class="icon flaticon-plus-symbol"></span>
+  												<div class="tooltip-data">
+  														<h4>Joints</h4>
+  														<div class="tooltip-text">text</div>
+  													</div>
+  												</div>
+
+
+  												<div class="plus-box frame-three">
+  													<span class="icon flaticon-plus-symbol"></span>
+  												<div class="tooltip-data">
+  														<h4>Vitrage</h4>
+  														<div class="tooltip-text">text</div>
+  													</div>
+  												</div>
 
 
 
-													<div class="plus-box frame-four">
-													<span class="icon flaticon-plus-symbol"></span>
-												<div class="tooltip-data">
-														<h4>Poignets</h4>
-														<div class="tooltip-text">text</div>
-													</div>
-												</div>
 
-											</div>
-										</div>
-									</div>
+  													<div class="plus-box frame-four">
+  													<span class="icon flaticon-plus-symbol"></span>
+  												<div class="tooltip-data">
+  														<h4>Poignets</h4>
+  														<div class="tooltip-text">text</div>
+  													</div>
+  												</div-->
 
-									<!--Right Column-->
-									<div class="right-column col-lg-3 col-md-6 col-sm-12">
-										<div class="inner-column">
+  											</div>
+  										</div>
+  									</div>
 
-											<!--Featured Block-->
-											<div class="featured-block">
-												<div class="inner-box">
-													<h3><a href="window-services.html">Formes</a></h3>
-													<div class="text"> Nous fabriquons plusieurs types de formes de fenêtres, aujourd’hui vous pouvez réaliser la fenêtre dont vous rêvez et qui s’adapte le mieux au style de votre habitation.</div>
-													<div class="icon-box">
-														<span class="icon flaticon-window-3"></span>
-													</div>
-												</div>
-											</div>
+  									<!--Right Column-->
+  									<div class="right-column col-lg-3 col-md-6 col-sm-12">
+  										<div class="inner-column">
 
-											<!--Featured Block-->
-											<div class="featured-block">
-												<div class="inner-box">
-													<h3><a href="window-services.html">Coloris</a></h3>
-													<div class="text"> Une fenêtre ou une porte-fenêtre contribue fortement au cachet de la maison, opter pour la couleur la plus adapté à votre maison demander l’avis de nos professionnels..</div>
-													<div class="icon-box">
-														<span class="icon flaticon-window-1"></span>
-													</div>
-												</div>
-											</div>
+  											<!--Featured Block-->
+  											<div class="featured-block">
+  												<div class="inner-box">
+  													<h3><a href="window-services.html">Formes</a></h3>
+  													<div class="text"> Nous fabriquons plusieurs types de formes de fenêtres, aujourd’hui vous pouvez réaliser la fenêtre dont vous rêvez et qui s’adapte le mieux au style de votre habitation.</div>
+  													<div class="icon-box">
+  															<img src="images/for.png" alt="" />
+  													</div>
+  												</div>
+  											</div>
 
-										</div>
-									</div>
+  											<!--Featured Block-->
+  											<div class="featured-block">
+  												<div class="inner-box">
+  													<h3><a href="window-services.html">Coloris</a></h3>
+  													<div class="text"> Une fenêtre ou une porte-fenêtre contribue fortement au cachet de la maison, opter pour la couleur la plus adapté à votre maison demander l’avis de nos professionnels..</div>
+  													<div class="icon-box">
+  															<img src="images/col.png" alt="" />
+  													</div>
+  												</div>
+  											</div>
 
-								</div>
-							</div>
-						</div>
+  										</div>
+  									</div>
 
-						<!-- Tab -->
-						<div class="tab" id="door-styles">
-							<div class="content">
-								<div class="row clearfix">
+  								</div>
+  							</div>
+  						</div>
 
-									<!--Left Column-->
-									<div class="left-column col-lg-3 col-md-6 col-sm-12">
-											<div class="inner-column">
+  						<!-- Tab -->
+  						<div class="tab" id="door-styles">
+  							<div class="content">
+  								<div class="row clearfix">
 
-											<!--Featured Block-->
-											<div class="featured-block">
-												<div class="inner-box">
-													<h3><a href="#">Ouvrantes </a></h3>
-													<div class="text">Nos Portes et Fenêtres sanitaires sont fabriquées sur-mesure . Elles s’adaptent parfaitement à votre décor intérieur.</div>
-													<div class="icon-box">
-														<span class="icon flaticon-door-1"></span>
-													</div>
-												</div>
-											</div>
+  									<!--Left Column-->
+  									<div class="left-column col-lg-3 col-md-6 col-sm-12">
+  											<div class="inner-column">
 
-											<!--Featured Block-->
-											<div class="featured-block">
-												<div class="inner-box">
-													<h3><a href="#">Services</a></h3>
-													<div class="text">Nos produits sont fabriquées sur-mesure en neuf comme en rénovation. Elles s’adaptent parfaitement à votre décor intérieur comme extérieur.</div>
-													<div class="icon-box">
-														<span class="icon flaticon-door-2"></span>
-													</div>
-												</div>
-											</div>
+  											<!--Featured Block-->
+  											<div class="featured-block">
+  												<div class="inner-box">
+  													<h3><a href="#">Ouvrantes </a></h3>
+  													<div class="text">Nos Portes et Fenêtres sanitaires sont fabriquées sur-mesure . Elles s’adaptent parfaitement à votre décor intérieur.</div>
+  													<div class="icon-box">
+  														<span class="icon flaticon-door-1"></span>
+  													</div>
+  												</div>
+  											</div>
 
-										</div>
-									</div>
+  											<!--Featured Block-->
+  											<div class="featured-block">
+  												<div class="inner-box">
+  													<h3><a href="#">Services</a></h3>
+  													<div class="text">Nos produits sont fabriquées sur-mesure en neuf comme en rénovation. Elles s’adaptent parfaitement à votre décor intérieur comme extérieur.</div>
+  													<div class="icon-box">
+  														<span class="icon flaticon-door-2"></span>
+  													</div>
+  												</div>
+  											</div>
+
+  										</div>
+  									</div>
 
 
-									<!--Image Column-->
-									<div class="image-column col-lg-6 col-md-12 col-sm-12">
-										<div class="inner-column">
-											<div class="image">
-												<img src="images/resource/window-2.png" alt="" />
+  									<!--Image Column-->
+  									<div class="image-column col-lg-6 col-md-12 col-sm-12">
+  										<div class="inner-column">
+  											<div class="image">
+  												<img src="images/resource/window-2.png" alt="" />
 
-												<!--Frame One-->
-												<div class="plus-box frame-one">
-													<span class="icon flaticon-plus-symbol"></span>
-												<!--div class="tooltip-data">
-														<h4>Air Tightness</h4>
-														<div class="tooltip-text">Know 8 grade to pursue pleasure rationally encounters that are extremely.</div>
-													</div-->
-												</div>
+  												<!--Frame One-->
+  												<div class="plus-box frame-one">
+  													<span class="icon flaticon-plus-symbol"></span>
+  												<!--div class="tooltip-data">
+  														<h4>Air Tightness</h4>
+  														<div class="tooltip-text">Know 8 grade to pursue pleasure rationally encounters that are extremely.</div>
+  													</div-->
+  												</div>
 
-												<!--Frame Two-->
-												<div class="plus-box frame-two">
-													<span class="icon flaticon-plus-symbol"></span>
-												<!--div class="tooltip-data">
-														<h4>Air Tightness</h4>
-														<div class="tooltip-text">Know 8 grade to pursue pleasure rationally encounters that are extremely.</div>
-													</div-->
-												</div>
+  												<!--Frame Two-->
+  												<div class="plus-box frame-two">
+  													<span class="icon flaticon-plus-symbol"></span>
+  												<!--div class="tooltip-data">
+  														<h4>Air Tightness</h4>
+  														<div class="tooltip-text">Know 8 grade to pursue pleasure rationally encounters that are extremely.</div>
+  													</div-->
+  												</div>
 
-												<!--Frame Three-->
-												<div class="plus-box frame-three">
-													<span class="icon flaticon-plus-symbol"></span>
-													<!--div class="tooltip-data">
-														<h4>Air Tightness</h4>
-														<div class="tooltip-text">Know 8 grade to pursue pleasure rationally encounters that are extremely.</div>
-													</div-->
-												</div>
+  												<!--Frame Three-->
+  												<div class="plus-box frame-three">
+  													<span class="icon flaticon-plus-symbol"></span>
+  													<!--div class="tooltip-data">
+  														<h4>Air Tightness</h4>
+  														<div class="tooltip-text">Know 8 grade to pursue pleasure rationally encounters that are extremely.</div>
+  													</div-->
+  												</div>
 
-												<!--Frame Four-->
-												<div class="plus-box frame-four">
-													<span class="icon flaticon-plus-symbol"></span>
-													<!--div class="tooltip-data">
-														<h4>Air Tightness</h4>
-														<div class="tooltip-text">Know 8 grade to pursue pleasure rationally encounters that are extremely.</div>
-													</div-->
-												</div>
+  												<!--Frame Four-->
+  												<div class="plus-box frame-four">
+  													<span class="icon flaticon-plus-symbol"></span>
+  													<!--div class="tooltip-data">
+  														<h4>Air Tightness</h4>
+  														<div class="tooltip-text">Know 8 grade to pursue pleasure rationally encounters that are extremely.</div>
+  													</div-->
+  												</div>
 
-												<!--Frame Five-->
-												<div class="plus-box frame-five">
-													<span class="icon flaticon-plus-symbol"></span>
-												<!--div class="tooltip-data">
-														<h4>Air Tightness</h4>
-														<div class="tooltip-text">Know 8 grade to pursue pleasure rationally encounters that are extremely.</div>
-													</div-->
-												</div>
+  												<!--Frame Five-->
+  												<div class="plus-box frame-five">
+  													<span class="icon flaticon-plus-symbol"></span>
+  												<!--div class="tooltip-data">
+  														<h4>Air Tightness</h4>
+  														<div class="tooltip-text">Know 8 grade to pursue pleasure rationally encounters that are extremely.</div>
+  													</div-->
+  												</div>
 
-											</div>
-										</div>
-									</div>
+  											</div>
+  										</div>
+  									</div>
 
-									<!--Right Column-->
-									<div class="right-column col-lg-3 col-md-6 col-sm-12">
-									<div class="inner-column">
+  									<!--Right Column-->
+  									<div class="right-column col-lg-3 col-md-6 col-sm-12">
+  									<div class="inner-column">
 
-											<!--Featured Block-->
-											<div class="featured-block">
-												<div class="inner-box">
-													<h3><a href="window-services.html">Porte Fenêtre</a></h3>
-													<div class="text">Nos Portes et Fenêtres sanitaires sont fabriquées sur-mesure . Elles s’adaptent parfaitement à votre décor intérieur.</div>
-													<div class="icon-box">
-														<span class="icon flaticon-door-3"></span>
-													</div>
-												</div>
-											</div>
+  											<!--Featured Block-->
+  											<div class="featured-block">
+  												<div class="inner-box">
+  													<h3><a href="window-services.html">Porte Fenêtre</a></h3>
+  													<div class="text">Nos Portes et Fenêtres sanitaires sont fabriquées sur-mesure . Elles s’adaptent parfaitement à votre décor intérieur.</div>
+  													<div class="icon-box">
+  														<span class="icon flaticon-door-3"></span>
+  													</div>
+  												</div>
+  											</div>
 
-											<!--Featured Block-->
-											<div class="featured-block">
-												<div class="inner-box">
-													<h3><a href="window-services.html">Décorés & Accordéons</a></h3>
-													<div class="text">Résoudre le problème du manque d'espace, elles s’adaptent parfaitement à votre décor intérieur comme extérieur..</div>
-													<div class="icon-box">
-														<span class="icon flaticon-door-4"></span>
-													</div>
-												</div>
-											</div>
+  											<!--Featured Block-->
+  											<div class="featured-block">
+  												<div class="inner-box">
+  													<h3><a href="window-services.html">Décorés & Accordéons</a></h3>
+  													<div class="text">Résoudre le problème du manque d'espace, elles s’adaptent parfaitement à votre décor intérieur comme extérieur..</div>
+  													<div class="icon-box">
+  														<span class="icon flaticon-door-4"></span>
+  													</div>
+  												</div>
+  											</div>
 
-										</div>
-									</div>
+  										</div>
+  									</div>
 
-								</div>
-							</div>
+  								</div>
+  							</div>
 
-						</div>
+  						</div>
 
-					</div>
+  					</div>
 
-				</div>
-			</div>
+  				</div>
+  			</div>
 
-		</div>
-	</section>
-  	<!--End Window Tab Section-->
+  		</div>
+  	</section>
 
 
     <!--End Gallery Section-->
@@ -1388,13 +1391,14 @@ Que votre projet soit résidentiel ou commercial, Speedwin saura bien vous conse
 	Inscrivez-vous pour recevoir les dernières nouvelles.</div>
 	                <!--Newsletter Form-->
 	                <div class="newsletter-form">
-	                                    <form method="post" action="contact.html">
-	                                        <div class="form-group clearfix">
-	                                          <input type="text" name="nom" value="" placeholder="Nom" required>
-	                                            <input type="email" name="email" value="" placeholder="Email Address" required>
-	                                            <button type="submit" class="theme-btn"><span class="icon flaticon-right-arrow-5"></span></button>
-	                                        </div>
-	                                    </form>
+                    <form method="post" action="{{url('newslt')}}" enctype="multipart/form-data">
+                        {{csrf_field()}}
+                        <div class="form-group clearfix">
+                          <input type="text" name="nom" id="nom"value="" placeholder="Nom" required>
+                            <input type="email" name="email" id="email" value="" placeholder="Email Address" required>
+                            <button type="submit" class="theme-btn"><span class="icon flaticon-right-arrow-5"></span></button>
+                        </div>
+                    </form>
 	                                </div>
 	                <!--Social Icon One-->
 	                <ul class="social-icon-one">

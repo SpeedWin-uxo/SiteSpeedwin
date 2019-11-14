@@ -49,11 +49,11 @@ merci d’envoyer CV et LM par mail en précisant le titre du poste.
 </p>
 						</div>
 
-						<div class="row clearfix">
+						<!--div class="row clearfix">
 
 							<div class="column col-lg-6 col-md-6 col-sm-12">
 
-								<!--Instalation Block-->
+
 								<div class="instalation-block">
 									<div class="inner-block">
 										<div class="icon-box">
@@ -67,7 +67,7 @@ merci d’envoyer CV et LM par mail en précisant le titre du poste.
 
 								</div>
 
-								<!--Instalation Block-->
+
 								<div class="instalation-block">
 									<div class="inner-block">
 										<div class="icon-box">
@@ -82,7 +82,7 @@ merci d’envoyer CV et LM par mail en précisant le titre du poste.
 
 							<div class="column col-lg-6 col-md-6 col-sm-12">
 
-								<!--Instalation Block-->
+
 								<div class="instalation-block">
 									<div class="inner-block">
 										<div class="icon-box">
@@ -93,7 +93,7 @@ merci d’envoyer CV et LM par mail en précisant le titre du poste.
 									</div>
 								</div>
 
-								<!--Instalation Block-->
+
 								<div class="instalation-block">
 									<div class="inner-block">
 										<div class="icon-box">
@@ -104,12 +104,12 @@ merci d’envoyer CV et LM par mail en précisant le titre du poste.
 									</div>
 								</div>
 
-									<!--Instalation Block-->
+
 
 
 							</div>
 
-						</div>
+						</div-->
 
 						<!--Chooser Section-->
 
@@ -139,16 +139,16 @@ merci d’envoyer CV et LM par mail en précisant le titre du poste.
 									<form method="post" action="contact-form">
 
 										<div class="form-group">
-											<input type="text" name="name" value="" placeholder="Nom*" required>
+											<input type="text" name="name" id="name" value="" placeholder="Nom*" required>
 										</div>
 										<div class="form-group">
-											<input type="email" name="email" value="" placeholder="Email*" required>
+											<input type="email" name="email" id="email" value="" placeholder="Email*" required>
 										</div>
 										<div class="form-group">
-											<input type="text" name="phone" value="" placeholder="Numéro*" required>
+											<input type="text" name="phone" id="phone" value="" placeholder="Numéro*" required>
 										</div>
 										<div class="form-group">
-											<select class="custom-select-box">
+											<select class="custom-select-box" name="offre" id="offre">
 												<option>offre 1</option>
 												<option>offre 2</option>
 												<option>offre 3</option>

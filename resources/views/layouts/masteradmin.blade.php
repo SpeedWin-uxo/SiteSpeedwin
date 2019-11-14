@@ -136,6 +136,7 @@ background-color:#e6e6e6;
 
 						<li class="current"><a href="{{url('homeadmin')}}" class="no-submenu"><span class="fam-application-form"></span>Acceuil</a></li>
 						<li class="current"><a href="{{url('recrutadmin')}}" class="no-submenu"><span class="fam-application-form"></span>Recrutement </a></li>
+						<li class="current"><a href="{{url('newsletter')}}" class="no-submenu"><span class="fam-application-form"></span>NewsLetters</a></li>
 						<li class="current"><a href="{{url('contact')}}" class="no-submenu"><span class="fam-application-form"></span>Contact</a></li>
 
 

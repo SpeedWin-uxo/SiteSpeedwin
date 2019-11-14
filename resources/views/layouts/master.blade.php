@@ -30,7 +30,7 @@
 font-style:italic;
 }
 #st{
-font-style:italic;
+
 text-align: center;
 color:#333;
 }
@@ -300,10 +300,11 @@ color:#333;
 Inscrivez-vous pour recevoir les dernières nouvelles.</div>
                 <!--Newsletter Form-->
                 <div class="newsletter-form">
-                                    <form method="post" action="contact.html">
+                                    <form method="post" action="{{url('newslt')}}" enctype="multipart/form-data">
+                                        {{csrf_field()}}
                                         <div class="form-group clearfix">
-                                          <input type="text" name="nom" value="" placeholder="Nom" required>
-                                            <input type="email" name="email" value="" placeholder="Email Address" required>
+                                          <input type="text" name="nom" id="nom"value="" placeholder="Nom" required>
+                                            <input type="email" name="email" id="email" value="" placeholder="Email Address" required>
                                             <button type="submit" class="theme-btn"><span class="icon flaticon-right-arrow-5"></span></button>
                                         </div>
                                     </form>

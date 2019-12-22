@@ -1,15 +1,6 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
+
 Route::get('homeadmin','SlideController@index');
 
 
@@ -25,6 +16,7 @@ Route::get('/deleteinst/{id}','InstalationController@delete');
 Route::get('/deleterect/{id}','RecrutementController@delete');
 Route::get('/deletecont/{id}','ContactController@delete');
 Route::post('homeadmin','SlideController@store');
+
 Route::post('contact','ContactController@store');
 Route::post('recrutadmin','RecrutementController@store');
 Route::post('cap','CapacityController@store');
@@ -34,16 +26,26 @@ Route::post('ref','ReferenceController@store');
 
 Route::get('cont','MmailController@index');
 Route::post('cont','MmailController@store');
-Route::get('devis','MmailController@affiche');
-Route::post('devis','MmailController@send');
+
+
+Route::get('devis','MmaildevisController@index');
+Route::post('devis','MmaildevisController@store');
+
 Route::get('newsletter','NewsletterController@index');
 
 Route::post('newslt','NewsletterController@store');
-Route::post('/deletenews/{id}','NewsletterController@delete');
+Route::get('/deletenews/{id}','NewsletterController@delete');
 
 
+Route::get('recrutement', function () {
+    return view('frontend.recrutement');
+});
 
+Route::get('cv','CvemploiController@index');
+Route::post('recrutement','CvemploiController@store');
 
+Route::get('/deletecv/{id}','CvemploiController@delete');
+Route::get('/downloadcv/{id}','CvemploiController@show');
 
 Route::get('/', 'SlideController@affiche');
 
@@ -89,7 +91,7 @@ Route::get('cons', function () {
 });
 
 
-Route::get('recrutement', function () {
+/*Route::get('recrutement', function () {
     return view('frontend.recrutement');
 });
 /*

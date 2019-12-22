@@ -41,7 +41,7 @@
       <div class="window-nav-outer"  >
 
       <ul class="window-nav clearfix">
-        <li><a href=votreprojet> Inspération</a></li>
+        <li><a href=votreprojet> Inspiration</a></li>
         <li><a  href=budget> Budget</a></li>
         <li ><a href=mesure> Prise de mesures</a></li>
         <li class="active"><a  href=pose> Production</a></li>
@@ -130,7 +130,7 @@ La fabrication des fenêtres est effectuée sur des lignes de production équip�
                         <span class="icon flaticon-doorway"></span>
                       </div>
                       <div class="window-heading"><a href="cons.html">Nos Projets</a></div>
-                      <a class="download" href="cons.html"><span class="arrow flaticon-right-arrow-4"></span></a>
+                      <a class="download" href="cons"><span class="arrow flaticon-right-arrow-4"></span></a>
                     </div>
                     <div class="image">
                       <img src="images/r3.png" alt="" />
@@ -155,31 +155,31 @@ La fabrication des fenêtres est effectuée sur des lignes de production équip�
 
           <div class="services-widget brands-widget">
             <div class="widget-content">
-              <h2>Témoignages</h2>
+              <h2>Références</h2>
               <div class="single-item-carousel owl-carousel owl-theme">
 
                 <div class="content">
                   <div class="image">
                     <img src="images/4.png" alt="" width="250"  height="70"/>
                   </div>
-                  <h3>Client 1</h3>
-                  <div class="text">texte texte texte texte.</div>
+                  <!--h3>Client 1</h3>
+                  <div class="text">texte texte texte texte.</div-->
                 </div>
 
                 <div class="content">
                   <div class="brand-image">
                     <img src="images/2.png" alt="" width="250"  height="70" />
                   </div>
-                  <h3>Client 2</h3>
-                  <div class="text">texte texte texte texte .</div>
+                  <!--h3>Client 1</h3>
+                  <div class="text">texte texte texte texte.</div-->
                 </div>
 
                 <div class="content">
                   <div class="brand-image">
                     <img src="images/3.png" alt="" width="250"  height="70"/>
                   </div>
-                  <h3>Client 3</h3>
-                  <div class="text">texte texte texte texte .</div>
+                  <!--h3>Client 1</h3>
+                  <div class="text">texte texte texte texte.</div-->
                 </div>
 
               </div>
@@ -200,8 +200,8 @@ La fabrication des fenêtres est effectuée sur des lignes de production équip�
 
           <!--Buttons Widget-->
           <div class="services-widget buttons-widget">
-            <a class="theme-btn glass-btn" href="cons.html"><span class="icon-box flaticon-doorway"></span> Portes</a>
-            <a class="theme-btn color-btn" href="cons.html"><span class="icon-box flaticon-window"></span>Fenêtres</a>
+            <a class="theme-btn glass-btn" href="cons"><span class="icon-box flaticon-doorway"></span> Portes</a>
+            <a class="theme-btn color-btn" href="cons"><span class="icon-box flaticon-window"></span>Fenêtres</a>
           </div>
 
         </div>

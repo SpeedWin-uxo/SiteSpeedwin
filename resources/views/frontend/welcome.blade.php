@@ -360,11 +360,11 @@ Que votre projet soit résidentiel ou commercial, Speedwin saura bien vous conse
 					<!--Appointment Form-->
 					<div class="appointment-form">
 
-            <form method="post" action="{{url('devis')}}" enctype="multipart/form-data">
+            <form method="post" action="{{url('devis')}}"enctype="multipart/form-data">
                 {{csrf_field()}}
 							<div class="row clearfix">
 								<div class="form-group col-lg-4 col-md-4 col-sm-12">
-									<input type="text" name="nom" id="name" value="" placeholder="Votre Nom" required>
+									<input type="text" name="name" id="name" value="" placeholder="Votre Nom" required>
 								</div>
 								<div class="form-group col-lg-4 col-md-4 col-sm-12">
 									<input type="text" name="phone"  id="phone" value="" placeholder="TéléPhone" required>
@@ -412,7 +412,7 @@ Que votre projet soit résidentiel ou commercial, Speedwin saura bien vous conse
                     <div class="column counter-column col-lg-3 col-md-6 col-sm-12">
                         <div class="inner wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
                         	<div class="count-outer count-box">
-                            	<span class="count-text" data-speed="6000" data-stop="{{ $capacity->nbrsolution }}"></span>
+                            	<span class="count-text" data-speed="0" data-stop="{{ $capacity->nbrsolution }}"></span>
                                 <h4 class="counter-title">Solutions Proposées</h4>
                             </div>
                         </div>

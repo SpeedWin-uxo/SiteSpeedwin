@@ -39,9 +39,9 @@
          <li><a href=votreprojet> Inspération</a></li>
          <li><a  href=budget> Budget</a></li>
          <li ><a href=mesure> Prise de mesures</a></li>
-         <li class="active"><a  href=pose> Production</a></li>
+         <li><a  href=pose> Production</a></li>
 
-         <li><a href=sav> SAV</a></li>
+         <li class="active"><a href=sav> SAV</a></li>
        </ul>
      </div>
          </div>
@@ -70,14 +70,19 @@
          <div class="inner-column">
          <div class="sec-title">
          <div class="title-inner"  data-wow-delay="0ms" data-wow-duration="1500ms">
-           <h2>Production et Pose</h2>
+           <h2>SERVICE APRÉS VENTE</h2>
 
            <div class="text">
-     <p>
-<strong>La commande passée, au bout de deux à trois semaines au maximum, </strong>vous recevrez vos fenêtres sur-mesure fabriquées au millimètre près et contrôlées avant expédition.
+     <p>C’est fini…!
+<strong>Votre projet d’installation ou changement de fenêtres vois enfin le jour mais vous ne serez pas abandonné pour autant !</strong>
+
+
+
+
+
 </p>
 <p>
-La fabrication des fenêtres est effectuée sur des lignes de production équipées de machines et d’appareils modernes. Ces machines sont fournies par des entreprises de renommée mondiale et pilotées par des logiciels informatiques pour une meilleure qualité finale de vos fenêtres.
+Votre satisfaction est notre engagement et pour l’obtenir, notre service après-vente restera à votre écoute durant et après toute la période de garantie pour toute assistance nécessaire vis-à-vis de notre prestation.
    </p>
 
    <div class="inner-column wow slideInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
@@ -125,7 +130,7 @@ La fabrication des fenêtres est effectuée sur des lignes de production équip�
                          <span class="icon flaticon-doorway"></span>
                        </div>
                        <div class="window-heading"><a href="cons.html">Nos Projets</a></div>
-                       <a class="download" href="cons.html"><span class="arrow flaticon-right-arrow-4"></span></a>
+                       <a class="download" href="cons"><span class="arrow flaticon-right-arrow-4"></span></a>
                      </div>
                      <div class="image">
                        <img src="images/r3.png" alt="" />
@@ -150,31 +155,31 @@ La fabrication des fenêtres est effectuée sur des lignes de production équip�
 
            <div class="services-widget brands-widget">
              <div class="widget-content">
-               <h2>Témoignages</h2>
+               <h2>Références</h2>
                <div class="single-item-carousel owl-carousel owl-theme">
 
                  <div class="content">
                    <div class="image">
                      <img src="images/4.png" alt="" width="250"  height="70"/>
                    </div>
-                   <h3>Client 1</h3>
-                   <div class="text">texte texte texte texte.</div>
+                   <!--h3>Client 1</h3>
+                   <div class="text">texte texte texte texte.</div-->
                  </div>
 
                  <div class="content">
                    <div class="brand-image">
                      <img src="images/2.png" alt="" width="250"  height="70" />
                    </div>
-                   <h3>Client 2</h3>
-                   <div class="text">texte texte texte texte .</div>
+                   <!--h3>Client 1</h3>
+                   <div class="text">texte texte texte texte.</div-->
                  </div>
 
                  <div class="content">
                    <div class="brand-image">
                      <img src="images/3.png" alt="" width="250"  height="70"/>
                    </div>
-                   <h3>Client 3</h3>
-                   <div class="text">texte texte texte texte .</div>
+                   <!--h3>Client 1</h3>
+                   <div class="text">texte texte texte texte.</div-->
                  </div>
 
                </div>
@@ -195,8 +200,8 @@ La fabrication des fenêtres est effectuée sur des lignes de production équip�
 
            <!--Buttons Widget-->
            <div class="services-widget buttons-widget">
-             <a class="theme-btn glass-btn" href="cons.html"><span class="icon-box flaticon-doorway"></span> Portes</a>
-             <a class="theme-btn color-btn" href="cons.html"><span class="icon-box flaticon-window"></span>Fenêtres</a>
+             <a class="theme-btn glass-btn" href="cons"><span class="icon-box flaticon-doorway"></span> Portes</a>
+             <a class="theme-btn color-btn" href="cons"><span class="icon-box flaticon-window"></span>Fenêtres</a>
            </div>
 
          </div>

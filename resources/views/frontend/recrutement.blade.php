@@ -136,16 +136,16 @@ merci d’envoyer CV et LM par mail en précisant le titre du poste.
 								<!--Consulting Form-->
 								<div class="consulting-form">
 
-									<form method="post" action="contact-form">
-
+								<form class="form-horizontal"  action="{{url('recrutement')}}" method="POST" enctype="multipart/form-data">
+    {{csrf_field()}}
 										<div class="form-group">
 											<input type="text" name="name" id="name" value="" placeholder="Nom*" required>
 										</div>
 										<div class="form-group">
-											<input type="email" name="email" id="email" value="" placeholder="Email*" required>
+											<input type="email" name="Email" id="Email" value="" placeholder="Email*" required>
 										</div>
 										<div class="form-group">
-											<input type="text" name="phone" id="phone" value="" placeholder="Numéro*" required>
+											<input type="text" name="num" id="num" value="" placeholder="Numéro*" required>
 										</div>
 										<div class="form-group">
 											<select class="custom-select-box" name="offre" id="offre">
@@ -157,10 +157,10 @@ merci d’envoyer CV et LM par mail en précisant le titre du poste.
 											</select>
 										</div>
 										<div class="form-group">
-											<textarea placeholder="Commenter vos remarques"></textarea>
+											<textarea name="message" id="message" placeholder="Commenter vos remarques"></textarea>
 										</div>
 										<div class="form-group"> Ajouter votre CV
-								<input type="file" accept="image/*,.pdf">
+								<input type="file"  name="fichier" id="fichier" accept="image/*,.pdf">
 								</div>
 
 

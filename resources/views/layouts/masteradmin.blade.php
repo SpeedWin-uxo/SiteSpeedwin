@@ -84,11 +84,16 @@
 
 		<style type="text/css">
 #st1{
+
+background-color:#e6e6e6;
+}
+#st2{
+	position:fixed;
 background-color:#e6e6e6;
 }
 </style>
 	</head>
-	<body class="fixed-layout">
+	<body class="">
 
 		<!-- Main page container -->
 		<div class="container">
@@ -97,7 +102,7 @@ background-color:#e6e6e6;
 			<a href="#" class="nav-toggle" title="On/Off navigation-block"><span class="awe-chevron-left"></span></a>
 
 			<!-- Left (navigation) side -->
-			<section class="navigation-block" id="st1">
+			<section class="navigation-block" id="st2">
 
 				<!-- Main page header -->
 				<header>
@@ -137,6 +142,7 @@ background-color:#e6e6e6;
 						<li class="current"><a href="{{url('homeadmin')}}" class="no-submenu"><span class="fam-application-form"></span>Acceuil</a></li>
 						<li class="current"><a href="{{url('recrutadmin')}}" class="no-submenu"><span class="fam-application-form"></span>Recrutement </a></li>
 						<li class="current"><a href="{{url('newsletter')}}" class="no-submenu"><span class="fam-application-form"></span>NewsLetters</a></li>
+								<li class="current"><a href="{{url('cv')}}" class="no-submenu"><span class="fam-application-form"></span>Cv Postulés</a></li>
 						<li class="current"><a href="{{url('contact')}}" class="no-submenu"><span class="fam-application-form"></span>Contact</a></li>
 
 

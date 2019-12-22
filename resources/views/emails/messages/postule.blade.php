@@ -1,16 +1,16 @@
 @component('mail::message')
 # Bonjour SpeedWin
-# Sujet: Demande de Devis
- - {{ $devis['name'] }}
+# Sujet: Demande d'emploi
+ - {{ $postule['name'] }}
 
 
   @component('mail::panel')
  #Je suis
- {{ $devis['name'] }}
+ {{  $postule['name'] }}
  #Mon Numéro est
-  {{ $devis['phone'] }}
-  #Je veux avoir un devis pour le services
-   {{ $devis['service'] }}
+  {{  $postule['num'] }}
+  #Je veux postuler pour l'offre
+   {{  $postule['offre'] }}
   @endcomponent
 
 Thanks,<br>

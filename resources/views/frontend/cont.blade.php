@@ -70,32 +70,109 @@
 </section>
 <!--End Office Section-->
 
-<!--End Company Section-->
-<section class="map-section">
-    <!--Map Outer-->
-      <!--div class="map-outer">
-          <div class="google-map"
-              id="contact-google-map"
-              data-map-lat="36.707139"
-              data-map-lng="3.2563498"
-              data-icon-path="images/icons/map-marker.png"
-              data-map-title="Algiers, Algeria"
-              data-map-zoom="12"
-              data-markers='{
-                "marker-1": [36.707139, 3.2563498, "<h4>Branch Office</h4><p>Alger, Algerie</p>"],
-                  "marker-2": [36.707139, 3.2563498, "<h4>Branch Office</h4><p>Alger, Algerie</p>"],
-                  "marker-3": [36.707139, 3.2563498, "<h4>Branch Office</h4><p>Alger, Algerie</p>"]
-              }'>
+<section class="faq-page-section">
+  <div class="auto-container">
+    <div class="row clearfix">
+
+
+      <div class="form-column col-lg-6 col-md-12 col-sm-12">
+        <div class="inner-column">
+           <ul class="accordion-box">
+@foreach($showrooms as $showroom)
+
+ @if($showroom->id %2 == 0)
+
+
+            <li class="accordion block">
+              <div class="acc-btn"><div class="icon-outer"><span class="icon icon-plus flaticon-plus"></span> <span class="icon icon-minus flaticon-minus"></span></div><strong>{{ $showroom->Nom }} </strong></div>
+              <div class="acc-content">
+                <div class="content">
+                  <div class="outer-box clearfix">
+          <ul class="option-list">
+            <li><span class="icon flaticon-phone-symbol-of-an-auricular-inside-a-circle"></span><strong>Tel:</strong> {{ $showroom->Telephone}}</li>
+            <li><span class="icon flaticon-question"></span> {{ $showroom->email }} </li>
+            </br>
+            <li><span class="icon flaticon-place"></span>{{ $showroom->adresse }}</li>
+
+          </ul>
+
+        </div>
+          <div id="" class="google-map m-none custom-contact-pos" style=" ">
+
+
+<iframe src="{{ $showroom->ifr }}"> </iframe>
+
+
+
+
+
 
       </div>
-      </div-->
+                </div>
+              </div>
+            </li>
+@endif
+@endforeach
+
+
+
+
+
+
+          </ul>
+
+        </div>
+      </div>
+
+
+      <div class="accordian-column col-lg-6 col-md-12 col-sm-12">
+        <div class="inner-column">
+           <ul class="accordion-box">
+
+@foreach($showrooms as $showroom)
+
+              @if($showroom->id %2 != 0)
+            <li class="accordion block">
+              <div class="acc-btn"><div class="icon-outer"><span class="icon icon-plus flaticon-plus"></span> <span class="icon icon-minus flaticon-minus"></span></div><strong>{{ $showroom->Nom }} </strong></div>
+              <div class="acc-content">
+                <div class="content">
+                  <div class="outer-box clearfix">
+          <ul class="option-list">
+            <li><span class="icon flaticon-phone-symbol-of-an-auricular-inside-a-circle"></span><strong>Tel:</strong> {{ $showroom->Telephone }} </li>
+            <li><span class="icon flaticon-question"></span> {{ $showroom->email }} </li>
+            </br>
+            <li><span class="icon flaticon-place"></span>{{ $showroom->adresse }} </li>
+          </ul>
+        </div>
+                </div>
+              </div>
+            </li>
+
+            @endif
+            @endforeach
+
+
+
+
+
+
+
+          </ul>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!--End Company Section-->
+<section class="map-section">
+
 
   <div id="" class="google-map m-none custom-contact-pos" style=" ">
 
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12790.188444026295!2d3.165931299999992!3d36.73343670000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe19759cb40b8275e!2sUXO%20Group!5e0!3m2!1sfr!2sdz!4v1568210899877!5m2!1sfr!2sdz" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-
-
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d204631.96232777377!2d3.2586266!3d36.7375831!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x48afbc7c4e53d85c!2sSPEEDWIN%20Direction!5e0!3m2!1sfr!2sdz!4v1576999413775!5m2!1sfr!2sdz" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 
 
 
